@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .text-tha {
+        font-family: "Superstore";
+    }
+
+    .text-eng {
+        font-family: "FordAntenna";
+    }
+}

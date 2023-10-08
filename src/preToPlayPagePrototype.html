@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Game2-backup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../dist/additionStyle.css">
+
+</head>
+
+<body class="bg-black">
+    <div class="game-container h-[100svh] w-screen max-w-screen-lg bg-black overflow-hidden relative mx-auto">
+        <div class="background absolute h-full w-[175%] z-20">
+            <img src="../../assets/images/game/sky.png" alt="" class="sky absolute bottom-[40%] w-full h-auto left-0" />
+            <img id="mountain" src="../../assets/images/game/mountain1.png" alt=""
+                class="h-auto w-full bg-center absolute bottom-[35%] left-0 object-cover" />
+        </div>
+
+        <div class="car-elements relative h-full w-full bottom-0 z-20">
+            <div class="road w-full absolute bottom-[10%] h-screen z-10">
+                <img src="../../assets/images/game/road.png" alt="" class="max-h-[40%] bottom-[15%] w-full absolute " />
+                <div class="road-sign absolute bottom-[0] h-[37%] w-full z-4">
+                    <img id="roadSign" src="../../assets/images/game/IMG_sign-01.png" alt=""
+                        class="absolute bottom-[100%] left-[22%] w-[1%] opacity-0" />
+
+                </div>
+            </div>
+            <div id="console"
+                class="console absolute bottom-[0%] left-[0%] h-full w-full max-h-[65%] z-20 md:max-h-[60%] origin-center">
+                <img src="../../assets/images/game/IMG_Ford-console.png" alt="" class="console-img w-full h-full " />
+                <div class=" absolute bottom-[0%] left-[0%] h-auto w-full">
+                    <div class="w-8 h-8 fixed bottom-[35.5%] right-[34.5%] md:w-3 md:h-3 md:bottom-[33.5%]">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container absolute h-full w-full top-0 z-30">
+            <div class="logo-container w-full h-24 bottom-100 z-30 mb-3 flex justify-between absolute">
+                <img src="../../assets/images/Ford-logo.png" alt="logo" class="" />
+                <img src="../../assets/images/banner-small.svg" alt="line360" class="mt-0 mr-6 w-[25%] md:w-[20%]" />
+            </div>
+
+            <div class="score-frame right-5 absolute bottom-[65%] w-[40%] md:leading-[1] md:w-1/3 md:bottom-[70%]">
+                <img src="../../assets/images/game/Score-frame.png" alt="" class="h-[80%] w-full" />
+                <span id="score" class="absolute text-white top-[50%] right-[7.5%] text-[45px] font-semibold 
+                md:top-[60%] md:text-[105px]">40</span>
+                <div id="line-score" style="z-index: 99;" class="absolute right-6 top-3 text-white flex md:right-12 md:top-12">
+                    <p class="relative -top-[0.75rem] w-[14rem] text-2xl text-tha">คลิกเพื่อขับรถ</p>
+                    <img src="../assets/images/line-score.svg" class=" ml-2"/>
+                </div>
+            </div>
+            <div
+                class="time-frame absolute left-[5%] bottom-[5%] z-40 text-[2rem] w-28 h-20 md:w-40 md:h-28 flex flex-col justify-center items-center">
+                <p class="text-white text-base font-semibold md:text-xl text-left mb-2 self-baseline">TIME</p>
+                <div class="time-frame h-full w-full border-sky-100 border-[2px] rounded-xl 
+                    grid place-content-center text-white font-semibold text-xl md:text-2xl">
+                    <span id="time">0.22</span>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black absolute top-0 right-0 left-0 bottom-0 z-20" style="opacity:0.4;"></div>
+        <div id="line-speed" style="z-index: 99;" 
+            class="absolute right-4 bottom-32 h-auto w-auto flex flex-col text-white items-center md:bottom-40 md:right-10">
+            <p class="text-2xl ">คลิกเพื่อขับรถ</p>
+            <img src="../assets/images/line-speed.svg" class=""/>
+        </div>
+        <div id="line-time" style="z-index: 99;" class="absolute left-[3rem] bottom-32 text-white flex w-[12rem] md:bottom-40">
+            <img src="../assets/images/line-time.svg" class=" mr-2"/>
+            <p class="relative -top-[1rem] w-[15rem] text-2xl text-tha">คลิกเพื่อขับรถ</p>
+        </div>
+        
+        <div
+            class="how-to-play-box w-10/12 h-auto border-2 absolute mx-auto top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] 
+            text-white my-6 px-6 border-[#68D9FD] bg-[#23365d] bg-opacity-90 rounded-2xl flex flex-col items-start justify-center z-40">
+            <div class="flex flex-col items-center justify-center w-full h-full py-3 px-3 text-center">
+                <div class="flex">
+                    <img class="mr-2" src="../assets/images/control-icon.svg" alt="" />
+                    <h1 class="my-2 text-xl font-normal">วิธีการเล่น</h1>
+                </div>
+                <span class="my-2 text-base font-normal">คลิกเพื่อขับฟอร์์ดคันที่ใช่ใน 30 วินาที ยิ่งคลิกได้มาก
+                    ยิ่งได้ลุ้นเป็นผู้นำในการรับของรางวัล</span>
+                <img src="../assets/images/howtopopup.svg" />
+            </div>
+        </div>
+        <div id="spd-btn" class="speed-button absolute bottom-0 right-0" style="opacity:1; z-index: 99;">
+            <img src="../../assets/images/game/IMG_btn-normal.png" alt=""
+                class="ml-[25%] max-w-[75%] md:max-w-full md:ml-0" />
+            <img src="../assets/images/hand-icon.svg" alt="" class="hand play absolute bottom-0 right-[2rem]"/>
+        </div>
+        <img src="../assets/images/cross.svg" alt="" class="absolute right-4 top-4 z-50" onclick="hidePopup()" />
+
+    </div>
+</body>
+
+</html>

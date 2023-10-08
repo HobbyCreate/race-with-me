@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+</head>
+
+<body class="m-0 p-0" style="font-family: Superstore;">
+    <div id="popup-rule"
+        class="absolute z-50 top-0 left-0 h-auto w-full max-w-screen-lg mx-auto bg-black bg-opacity-50 flex transition-opacity duration-300 ease-in-out opacity-1 visible">
+        <div class="bg-black relative rounded-xl w-full z-0 h-full" style="overflow: scroll;">
+            <img src="../assets/images/score-bg.jpg" alt="" class="absolute top-0 left-0 right-0 bottom-0 z-0 w-full" />
+            <div class="logo-container w-full h-24 top-0 z-30 flex justify-between relative">
+                <img src="../assets/images/Ford-logo.png" alt="logo" class="" />
+                <img src="../assets/images/cross.svg" alt="line360" class="p-4" onclick="hidePopup()" />
+            </div>
+            <div class="content-container w-full z-30 h-[100%] flex flex-col mb-10 relative">
+                <div class="text-container my-3 w-10/12 mx-auto leading-[1] md:w-3/5" style="font-family: Superstore;">
+                    <img src="../assets/images/banner-small.svg" alt="" class="mx-auto my-3" />
+                    <h1 class="text-tha text-white text-center text-[35px] font-semibold md:text-[45px]">
+                        กติการ่วมสนุก</h1>
+                </div>
+                <div class="swiper h-[24rem] w-full">
+                    <div class="swiper-wrapper h-full">
+                        <div
+                            class="swiper-slide w-full flex flex-col items-center justify-start relative top-4 text-white leading-[1]">
+                            <img src="../assets/images/first-prize.svg" alt="" />
+                            <p class="text-3xl">ผู้ชนะอันดับที่ 1-2</p>
+                            <span class="text-4xl">บัตรน้ำมัน</span>
+                            <span class="text-4xl">มูลค่า 1,000 บาท</span>
+                            <p class="text-2xl">จำนวน 154 รางวัล</p>
+                        </div>
+                        <div
+                            class="swiper-slide w-full flex flex-col items-center justify-start relative top-4 text-white leading-[1]">
+                            <img src="../assets/images/first-prize.svg" alt="" />
+                            <p class="text-3xl">ผู้ชนะอันดับที่ 2</p>
+                            <span class="text-4xl">บัตรน้ำมัน</span>
+                            <span class="text-4xl">มูลค่า 1,000 บาท</span>
+                            <p>จำนวน 154 รางวัล</p>
+                        </div>
+                        <div
+                            class="swiper-slide w-full flex flex-col items-center justify-start relative top-4 text-white leading-[1]">
+                            <img src="../assets/images/first-prize.svg" alt="" />
+                            <p class="text-3xl">ผู้ชนะอันดับที่ -2</p>
+                            <span class="text-4xl">บัตรน้ำมัน</span>
+                            <span class="text-4xl">มูลค่า 1,000 บาท</span>
+                            <p class="text-2xl">จำนวน 154 รางวัล</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div
+                    class="w-10/12 h-auto border-2 mx-auto text-white my-6 px-6 border-[#68D9FD] bg-[#23365d] bg-opacity-90 rounded-2xl flex flex-col items-start justify-center">
+                    <div class="my-3">
+                        <h1 class="text-4xl">ของรางวัล</h1>
+                        <span class="text-2xl">
+                            บัตรน้ำมันมูลค่า 1,000 บาท แจกวันละ 2 รางวัล รวมทั้งสิ้น 154 รางวัล รวมมูลค่า 154,000 บาท
+                        </span>
+                    </div>
+
+                    <div class="my-3">
+                        <h1 class="text-4xl">การประกาศรางวัล</h1>
+                        <span class="text-2xl">
+                            สำหรับผู้ที่ร่วมเล่นเกม Race Your Ford บริษัทฯ
+                            จะดำเนินการตรวจสอบรายชื่อผู้มีสิทธิ์รับรางวัลและ
+                            จะประกาศผลรางวันทั้งหมด 3 รอบ ผ่านทาง Ford Thailand LINE Official
+                        </span>
+                        <ul class="my-3 text-2xl list-disc list-inside">
+                            <li class="">
+                                สำหรับผู้ที่ร่วมเล่นเกมตั้งแต่วันที่ 15 ตุลาคม
+                                2566 – 31 ตุลาคม 2566 จะประกาศผลวันที่ 9
+                                พฤศจิกายน 2566 เวลา 18.00 น.
+                            </li>
+                            <li>
+                                สำหรับผู้ที่ร่วมเล่นเกมตั้งแต่วันที่ 1 พฤศจิกายน
+                                2566 – 30 พฤศจิกายน 2566 จะประกาศผลวัน
+                                ที่ 12 ธันวาคม 2566 เวลา 18.00 น.
+                            </li>
+                            <li>
+                                สำหรับผู้ที่ร่วมเล่นเกมตั้งแต่วันที่ 1 ธันวาคม
+                                2566 – 31 ธันวาคม 2566 จะประกาศผลวันที่ 10
+                                มกราคม 2567 เวลา 18.00 น.
+                            </li>
+                        </ul>
+                        <span class="text-2xl">
+                            **ผู้ได้รับรางวัลไม่สามารถโอนสิทธิ์ แลกเปลี่ยน ซื้อ
+                            - ขาย หรือทอนของรางวัลเป็นเงินสด
+                        </span>
+                    </div>
+                </div>
+
+                <div
+                    class="rule w-10/12 h-auto border-2 mx-auto text-white my-6 px-6 border-[#68D9FD] bg-[#23365d] bg-opacity-90 rounded-2xl flex flex-col items-start justify-center">
+                    <div class="my-3">
+                        <h1 class="text-4xl">กติกาการเล่น</h1>
+                        <span class="text-2xl">
+                            กิจกรรม Race Your Ford Challenge
+                            ฟอร์ดชวนคุณร่วมกิจกรรม Race Your Ford
+                            Challenge เลือกคันที่ใช่ แล้วไปให้สุด!
+                            ลุ้นรับบัตรน้ำมันมูลค่าสูงสุด 1,000 บาท และรางวัล
+                            อื่นๆ ทุกวัน! เพียงลงทะเบียนผ่าน Ford Thailand
+                            LINE Official แล้วมาคลิกซิ่งรถฟอร์ดที่คุณถูกใจ
+                            เพื่อลุ้นรับของรางวัลมากมาย ตั้งแต่วันที่ 15 ตุลาคม
+                            2566 – 31 ธันวาคม 2566 (รวม 78 วัน)
+                        </span>
+                        <ul class="my-3 text-2xl list-disc list-inside">
+                            <li>
+                                เพิ่มฟอร์ดเป็นเพื่อนและลงทะเบียนผ่าน Ford Thailand LINE Official
+                            </li>
+                            <li>
+                                พิชิตความเร็วโดยการคลิกให้ได้จำนวนครั้งมาก
+                                ที่สุด เพื่อให้เป็นคะแนนระยะทางสูงที่สุด ภายในระยะ
+                                เวลา 30 วินาที
+                            </li>
+                            <li>
+                                ผู้เล่นที่ทำคะแนนได้สูงสุดลำดับที่ 1-2 ของแต่ละ
+                                วัน จะได้รับบัตรน้ำมันมูลค่า 1,000 บาท ท่านละ 1
+                                รางวัล
+                            </li>
+                            <li>
+                                ผู้เล่นที่ทำคะแนนได้สูงสุดลำดับที่ 3-4 ของ
+                                แต่ละวัน จะได้รับบัตรน้ำมันมูลค่า 500 บาท ท่านละ
+                                1 รางวัล
+                            </li>
+                            <li>
+                                ผู้เล่นที่ทำคะแนนได้สูงสุดลำดับที่ 5-8 ของ
+                                แต่ละวัน จะได้รับบัตรกำนัลสตาร์บัคส์ (e-
+                                Voucher) มูลค่า 200 บาท ท่านละ 1 รางวัล
+                            </li>
+                            <li>
+                                หลังร่วมกิจกรรม ผู้เล่นต้องกรอกข้อมูลและที่
+                                อยู่ให้ถูกต้อง เพื่อสิทธิประโยชน์ในการจัดส่งของ
+                                รางวัล
+                            </li>
+                            <li>
+                                ลำดับผู้เล่นเป็นการจัดลำดับวันต่อวัน โดยเริ่ม
+                                นับตั้งแต่เวลา 0:00 น. ถึงเวลา 23:59:59 น.
+                            </li>
+                            <li>
+                                กรณีมีผู้ได้คะแนนสูงสุดมากกว่า 1 ท่าน ระบบจะ
+                                นับเวลาจากผู้ที่เข้ามาเล่นก่อน ให้เป็นผู้ที่ได้รางวัล
+                                สูงสุด
+                            </li>
+                            <li>
+                                สงวนสิทธิ์การรับรางวัลเพียง 1 รางวัล ต่อ
+                                1 LINE ID ชื่อ-นามสกุล เบอร์มือถือ ที่ลงทะเบียน
+                                ร่วมสนุกเท่านั้นตลอดระยะเวลากิจกรรม
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="w-10/12 h-auto border-2 mx-auto text-white my-6 px-6 border-[#68D9FD] bg-[#23365d] bg-opacity-90 rounded-2xl flex flex-col items-start justify-center">
+                    <div class="my-3">
+                        <h1 class="text-4xl">ข้อกำหนดและเงื่อนไข</h1>
+                        <ul class="my-3 text-2xl list-disc list-inside">
+                            <li>
+                                กิจกรรมนี้จัดขึ้นระหว่างวันที่ 15 ตุลาคม 2566
+                                – 31 ธันวาคม 2566 โดย บริษัท ฟอร์ด เซลส์
+                                แอนด์ เซอร์วิส (ประเทศไทย) จำกัด
+                            </li>
+                            <li>
+                                การเข้าร่วมกิจกรรมดังกล่าวถือว่าผู้เข้าร่วม
+                                กิจกรรมได้อ่านและเข้าใจข้อกำหนดและเงื่อนไขวิธี
+                                การเล่นของรางวัล และรายละเอียดต่างๆเรียบร้อย
+                                แล้ว และยินยอมปฏิบัติตามข้อกำหนดและเงื่อนไขใน
+                                การเข้าร่วมกิจกรรมในครั้งนี้
+                            </li>
+                            <li>
+                                หากบริษัทฯ ตรวจพบว่ามีการทุจริตเกิดขึ้น หรือ
+                                ผู้ร่วมกิจกรรมไม่ปฏิบัติตามกติกาของกิจกรรมไม่ว่า
+                                ในกรณีใดๆ บริษัทฯ จะตัดสิทธิ์การเข้าร่วมกิจกรรม
+                                หรือรับของรางวัลโดยไม่ต้องแจ้งให้ทราบล่วงหน้า
+                                พนักงานบริษัท ฟอร์ด เซลส์ แอนด์ เซอร์วิส
+                                (ประเทศไทย) จำกัด บริษัทในเครือ พนักงานของผู้
+                                จำหน่าย และพนักงานบริษัทตัวแทนโฆษณาที่
+                                เกี่ยวข้อง รวมถึงครอบครัวและเครือญาติใกล้ชิดของ
+                                บุคคลดังกล่าวไม่มีสิทธิในการเข้าร่วมกิจกรรมนี้
+                            </li>
+                            <li>
+                                ข้อมูลส่วนบุคคลของท่านข้างต้น จะถูกจัดเก็บ
+                                และเปิดเผยไปยังบริษัท ฟอร์ด เซลล์ แอนด์ เซอร์วิส
+                                (ประเทศไทย) จำกัด (“ฟอร์ด”) และบริษัทในเครือ
+                                เพื่อให้ฟอร์ดสามารถใช้ข้อมูลนี้ในการติดต่อท่าน
+                                เกี่ยวกับกิจกรรมที่ท่านตกลงเข้าร่วมนี้ ฟอร์ดอาจ
+                                เปิดเผยข้อมูลของท่านให้กับผู้จำหน่ายของฟอร์ด
+                                และผู้ให้บริการ(ซัพพลายเออร์)อื่นของฟอร์ดที่
+                                เกี่ยวข้อง ข้อมูลของท่านอาจถูกโอนย้ายไปยังแหล่ง
+                                จัดเก็บข้อมูลต่างประเทศ รวมถึงข้อมูลส่วนบุคคล
+                                ของท่านอาจมีการเปิดเผยในอันดับคะแนนประจำวัน
+                                บนหน้าเว็บกิจกรรม นโยบายการรักษาความ
+                                ปลอดภัยของข้อมูลของฟอร์ดสามารถดูได้ที่
+                                https://www.ford.co.th ซึ่งจะอธิบายถึงการ
+                                เก็บรักษาข้อมูลส่วนบุคคลของฟอร์ด ท่านสามารถ
+                                ติดต่อฟอร์ดเพื่อขอเข้าถึงหรือแก้ไขข้อมูลส่วนบุคคล
+                                ได้ทาง Call Center โทร 1383
+                            </li>
+                            <li>
+                                สอบถามข้อมูลเพิ่มเติมที่ Call Center โทร
+                                1383
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <style>
+        .swiper-pagination .swiper-pagination-bullet {
+            width: 3rem;
+            border: 1px solid #FFFFFF;
+            border-radius: 0;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #FFFFFF;
+        }
+    </style>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,                         //loop
+            autoplay: {                         //autoplay
+                delay: 2000,
+            },
+            pagination: {                       //pagination(dots)
+                el: '.swiper-pagination',
+            },
+            navigation: {                       //navigation(arrows)
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+    </script>
+</body>
+
+</html>

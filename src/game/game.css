@@ -1,0 +1,457 @@
+:root {
+    /* Console Animation variable */
+    --consoleBottomPosition: 0%;
+    --consoleStartAnimateDuration: 300ms;
+    --consoleTrickAnimateDuration: 2000ms;
+
+    /* Background Animation variable */
+    --skyAnimateDuration: 60000ms;
+
+    /* Road Sign Animation variable */
+    --roadSignAnimateDuration: 3000ms;
+    --roadStripAnimationDuration: 3000ms;
+
+    --roadSignBigScreenBottom0: 100%;
+    --roadSignBigScreenBottom25: 100%;
+    --roadSignBigScreenBottom100: 25%;
+
+    --roadSignBigScreenLeft0: 28%;
+    --roadSignBigScreenLeft25: 28%;
+    --roadSignBigScreenLeft100: -70%;
+
+    /* Road Strip Animation variable */
+
+    --roadStripAnimateDuration: 2000ms;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.road-sign>#roadSign.play {
+    animation: roadSignAnimation var(--roadSignAnimateDuration) infinite ease-in;
+}
+
+#time.play {
+    animation: scaleAnimation 0.5s linear infinite;
+}
+
+.sky {
+    animation: skySlider var(--skyAnimateDuration) linear infinite alternate;
+}
+
+#console.start {
+    animation: startConsoleAnimate var(--consoleStartAnimateDuration) linear infinite alternate;
+}
+
+#console.run {
+    animation: consoleTrick var(--consoleTrickAnimateDuration) linear infinite alternate;
+}
+
+#mile-rotate {
+    animation: rotateMile 0.1s linear;
+}
+
+.road-strip.play {
+    animation: roadStrip var(--roadStripAnimationDuration) linear infinite;
+}
+
+@keyframes roadSignAnimation {
+    0% {
+        bottom: var(--roadSignBigScreenBottom0);
+        left: var(--roadSignBigScreenLeft0);
+        width: 0%;
+        height: auto;
+        opacity: 1;
+    }
+
+    30% {
+        bottom: var(--roadSignBigScreenBottom25);
+        left: var(--roadSignBigScreenLeft25);
+        width: 1.5%;
+        height: auto;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: var(--roadSignBigScreenBottom100);
+        left: var(--roadSignBigScreenLeft100);
+        width: 50%;
+        height: auto;
+        opacity: 1;
+    }
+}
+
+
+/* RoadStrip Animation */
+
+@keyframes roadStripAnimation {
+    0% {
+        bottom: 12%;
+        left: -15%;
+    }
+
+    100% {
+        bottom: -70%;
+        left: 45%;
+    }
+}
+
+
+/* Sky Animation */
+
+@keyframes skySlider {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -40%;
+    }
+}
+
+/* Console Animation */
+
+@keyframes consoleTrick {
+    0% {
+        transform: rotate(0.2deg);
+        bottom: calc(var(--consoleBottomPosition) - 0.2%);
+    }
+
+    25% {
+        transform: rotate(0.1deg);
+        bottom: var(--consoleBottomPosition);
+    }
+
+    50% {
+        transform: rotate(-0.1deg);
+        bottom: calc(var(--consoleBottomPosition) - 0.1%);
+    }
+
+    75% {
+        transform: rotate(0.2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        bottom: var(--consoleBottomPosition);
+    }
+}
+
+@keyframes startConsoleAnimate {
+    0% {
+        bottom: var(--consoleBottomPosition);
+    }
+
+    50% {
+        bottom: calc(var(--consoleBottomPosition) - 0.1%);
+    }
+
+    75% {
+        bottom: var(--consoleBottomPosition);
+    }
+
+    100% {
+        bottom: calc(var(--consoleBottomPosition) - 0.1%);
+    }
+}
+
+
+/* Time Animation */
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        font-weight: 600;
+        transform: scale(1.3);
+    }
+}
+
+.rotate-animation {
+    animation: rotate 5s linear infinite;
+    transform-origin: center;
+    /* Set the transform origin to the center of the element */
+}
+
+@keyframes rotateMile {
+    0% {
+        transform: rotate(-133deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes roadStrip {
+    0% {
+        left: 25%;
+        top: -10%;
+        height: 0%;
+
+    }
+
+    10% {
+        /* left: 20%; */
+        height: 5%;
+    }
+
+    100% {
+        left: 120%;
+        top: 65%;
+        height: 30%;
+
+    }
+}
+
+.game-container {
+    height: 100vh;
+    height: 100svh;
+    min-height: 100vh;
+    min-height: 100svh;
+    max-height: 100vh;
+    max-height: 100svh;
+}
+
+
+.transparent-block {
+    height: 70vw;
+}
+
+.console-block {
+    height: calc(100vw - 70vw);
+}
+
+.console-bar {
+    left: 37.5vw;
+}
+
+.mile-block {
+    top: 56vw
+}
+
+.mile {
+    width: 0.75rem;
+}
+
+.mile>img {
+    width: 0.5vw;
+    top: -0.55rem;
+}
+
+#gear-controll {
+    font-size: 12px;
+}
+
+.space {
+    width: 21vw;
+}
+
+.road-sign {
+    height: calc(100vh - 53vh);
+}
+
+.strip {
+    height: calc(100vh - 54.5vh);
+}
+
+.road-strip {
+    width: 13px;
+    height: 40px;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+    transform: skew(50deg, -5deg);
+}
+
+.speed-button {
+    background: url('../../assets/images/game/IMG_btn-normal.png');
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+}
+
+.speed-button:active {
+    background: url('../../assets/images/game/IMG_btn-pressed.png');
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+}
+
+.perspective-plate {
+    top: calc(100vh - 310vw);
+    left: -320vw;
+    width: 2000px;
+    height: 2000px;
+}
+
+
+@media only screen and (min-width:767px) {
+    .transparent-block {
+        height: 35vw;
+    }
+
+    .console-block {
+        height: calc(100vw - 35vw);
+    }
+
+    .console-bar {
+        left: 37.5vw;
+    }
+
+    .mile-block {
+        top: 55vw
+    }
+
+    .mile {
+        width: 2rem;
+    }
+
+    /* .mile>img {
+        width: 0.75vw;
+        top: -1.5rem;
+    } */
+
+    #gear-controll {
+        font-size: 22px;
+    }
+
+    .space {
+        width: 22.6vw;
+    }
+
+    .road-sign {
+        height: calc(100vh - 53vh);
+    }
+
+    .road-strip {
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        left: 40%;
+        top: -20%;
+        transform: skew(60deg, -5deg);
+    }
+
+    .strip {
+        height: calc(100vh - 54.5vh);
+    }
+
+    .speed-button {
+        background: url('../../assets/images/game/IMG_btn-normal.png');
+        width: 200px;
+        aspect-ratio: 1/1;
+        background-size: cover;
+    }
+
+    .speed-button:active {
+        background: url('../../assets/images/game/IMG_btn-pressed.png');
+        width: 200px;
+        aspect-ratio: 1/1;
+        background-size: cover;
+    }
+
+    .perspective-plate {
+        top: calc(100vh - 200vw);
+        left: -200vw;
+        width: 3500px;
+        height: 3500px;
+    }
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #00095B;
+    border-color: #00095B transparent #00095B transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#mile-rotate {
+    transition: transform 1000ms ease;
+    /* Adjust the duration and timing function as needed */
+}
+
+#readyTime.play {
+    animation: readyCountDown 1000ms linear infinite;
+}
+
+@keyframes readyCountDown {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes rotateRoad {
+    from {
+        transform: perspective(40px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: perspective(40px) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+    }
+}
+
+@keyframes leftRoadSlide {
+    from {
+        bottom: -9%;
+        left: 0;
+        transform: scale(1);
+    }
+
+    to {
+        bottom: -84.5%;
+        left: -352%;
+        transform: scale(6.25);
+    }
+}
+
+@keyframes leftRoadSlide1 {
+    from {
+        left: 60%;
+        transform: scale(0.18);
+        bottom: 3%;
+    }
+
+    to {
+        bottom: -9%;
+        left: 0;
+        transform: scale(1);
+    }
+}
+
+#road-spin {
+    transition: animation-duration 2s ease-in-out;
+}
+
+

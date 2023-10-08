@@ -1,0 +1,538 @@
+/* FordAntenna Font */
+
+@font-face {
+    font-family: 'FordAntenna';
+    src: url(./English/FordAntennaRegular.otf) format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntenna';
+    src: url(./English/FordAntennaSemibold.otf) format("opentype");
+    font-weight: 600;
+    font-display: swap;
+}
+
+/* FordAntennaCompWGL Font */
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-Black.otf) format("opentype");
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-BlackItalic.otf) format("opentype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-BoldItalic.otf) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-ExtLight.otf) format("opentype");
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-ExtLigIt.otf) format("opentype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-Light.otf) format("opentype");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-LightIta.otf) format("opentype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-Med.otf) format("opentype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-MedItalic.otf) format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-Reg.otf) format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-RegItalic.otf) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-Semibold.otf) format("opentype");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-SemiboldIta.otf) format("opentype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-Thin.otf) format("opentype");
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCompWGL';
+    src: url(./English/FordAntennaCompWGL-ThinItalic.otf) format("opentype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* FordAntennaCondWGL Font */
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-Black.otf) format("opentype");
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-BlackItalic.otf) format("opentype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-BoldItalic.otf) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-ExtraLight.otf) format("opentype");
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-ExtLightIta.otf) format("opentype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-Light.otf) format("opentype");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-LightItalic.otf) format("opentype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-Med.otf) format("opentype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-MedItalic.otf) format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-Reg.otf) format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-RegItalic.otf) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-Thin.otf) format("opentype");
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaCondWGL';
+    src: url(./English/FordAntennaCondWGL-ThinItalic.otf) format("opentype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* FordAntennaExtraCondWGL Font */
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Black.otf) format("opentype");
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Black.otf) format("opentype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-BoldIt.otf) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-ExtLig.otf) format("opentype");
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-ExtLigIt.otf) format("opentype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Light.otf) format("opentype");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-LigIt.otf) format("opentype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Med.otf) format("opentype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-MedIt.otf) format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Reg.otf) format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-RegIta.otf) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Semibold.otf) format("opentype");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-SemiboldIta.otf) format("opentype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-Thin.otf) format("opentype");
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaExtraCondWGL';
+    src: url(./English/FordAntennaExtraCondWGL-ThinIta.otf) format("opentype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* FordAntennaWGL Font */
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-Black.otf) format("opentype");
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-BlackItalic.otf) format("opentype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-BoldItalic.otf) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-ExtraLight.otf) format("opentype");
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-ExtraLightItalic.otf) format("opentype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-Light.otf) format("opentype");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-LightItalic.otf) format("opentype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-Medium.otf) format("opentype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-MediumItalic.otf) format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-Regular.otf) format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-RegularItalic.otf) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-Semibold.otf) format("opentype"),
+        url(./English/FordAntennaWGL-Semibold.ttf) format("truetype");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-SemiboldItalic.otf) format("opentype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-Thin.otf) format("opentype");
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FordAntennaWGL';
+    src: url(./English/FordAntennaWGL-ThinItalic.otf) format("opentype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Superstore Font */
+
+@font-face {
+    font-family: 'Superstore';
+    src: url(./Thai/Superstore.Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Superstore';
+    src: url(./Thai/Superstore.BoldItalic.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Superstore';
+    src: url(./Thai/Superstore.Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Superstore';
+    src: url(./Thai/Superstore.Italic.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Superstore';
+    src: url(./Thai/Superstore.Light.ttf) format("truetype");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Superstore';
+    src: url(./Thai/Superstore.LightItalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
